@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      <audio src={samka} autoPlay></audio>
+      <audio src={samka} autoPlay={true}></audio>
       <div style={{ fontSize: 100 }}>SA</div>
       <div className="names">
         <div className="glow">Sasha</div>
