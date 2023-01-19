@@ -144,3 +144,15 @@
     color: purple;
   }
 }
+
+.clickme {
+  position: absolute;
+  font-size: 15px;
+  padding: 2px 5px;
+  color: rgb(233, 237, 31);
+  background-color: rgb(3, 3, 3, 0.5);
+  border-radius: 30px;
+  top: 20px;
+  right: -30px;
+  transform: rotate(0.05turn)
+}

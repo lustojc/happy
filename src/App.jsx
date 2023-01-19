@@ -44,6 +44,8 @@ function App() {
     seconds: 0,
   });
 
+  let music = new Audio(samka);
+
   useEffect(() => {
     const startDate = new Date("05/01/2021");
     const interval = setInterval(() => {
@@ -61,8 +63,14 @@ function App() {
 
   return (
     <div className="App">
-      <audio src={samka} autoPlay={true}></audio>
-      <div style={{ fontSize: 100 }}>SA</div>
+      {/* <audio src={samka} autoPlay={true} muted={false}></audio> */}
+      <div
+        onClick={() => music.play()}
+        style={{ fontSize: 100, position: "relative", cursor: 'pointer' }}
+      >
+        SA
+        <div className="clickme">НАЖМИ 🤩</div>
+      </div>
       <div className="names">
         <div className="glow">Sasha</div>
         <div style={{ width: 40, height: 40 }}>❤️‍🔥</div>
@@ -173,6 +181,10 @@ function App() {
         <a href="https://t.me/akofitova" target="_blank">
           <img src={tg} alt="tg"></img>
         </a>
+      </div>
+
+      <div style={{ scale: "500%", marginTop: 40 }}>
+        🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰
       </div>
     </div>
   );
