@@ -1,41 +1,146 @@
-#root {
+.App {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.names {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.glow {
+  text-shadow: 0 0 10px rgb(221, 57, 84);
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+}
+
+.ph {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 15%;
+}
+.ph2 {
+  width: 30%;
+  border-radius: 15%;
+  scale: 90%;
+}
+
+.heart {
+  position: absolute;
+  top: 50%;
+  scale: 1000%;
+}
+
+.censored {
+  position: absolute;
+  top: 40%;
+  left: 57%;
+  width: 80px;
+  background-color: black;
+  transform: rotate(0.05turn)
+  
+}
+
+.date {
+  font-size: 50px;
+  font-weight: 900;
+  font-style: oblique;
+  color: rgb(251, 86, 251);
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.formName {
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.formMessage {
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  height: 100px;
+  resize: none;
+}
+
+.list {
+  display: flex;
+  justify-content: start;
+  width: 1000px;
+  padding-top: 20px;
+}
+
+.info {
+  display: flex;
+
+}
+
+.bio {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+.rofl {
+  display: flex;
+  width: 1200px;
+  justify-content: space-evenly;
+}
+
+.hb {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.rainbow {
+  animation: rainbow 3s infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
   }
-  to {
-    transform: rotate(360deg);
+  20% {
+    color: orange;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  40% {
+    color: yellow;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  60% {
+    color: green;
+  }
+  80% {
+    color: blue;
+  }
+  100% {
+    color: purple;
+  }
 }
